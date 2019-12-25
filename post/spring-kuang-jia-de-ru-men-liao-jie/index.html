@@ -1,22 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zblog2020.github.io/</id>
-    <title>Gridea</title>
-    <updated>2019-12-25T12:56:27.085Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://zblog2020.github.io/"/>
-    <link rel="self" href="https://zblog2020.github.io//atom.xml"/>
-    <subtitle>学习分享</subtitle>
-    <logo>https://zblog2020.github.io//images/avatar.png</logo>
-    <icon>https://zblog2020.github.io//favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[Spring框架的入门了解]]></title>
-        <id>https://zblog2020.github.io//post/spring-kuang-jia-de-ru-men-liao-jie</id>
-        <link href="https://zblog2020.github.io//post/spring-kuang-jia-de-ru-men-liao-jie">
-        </link>
-        <updated>2019-12-25T12:54:02.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="一-背景了解">一、背景了解</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Spring框架的入门了解 | Gridea</title>
+<meta name="description" content="学习分享">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zblog2020.github.io//favicon.ico?v=1577278582579">
+<link rel="stylesheet" href="https://zblog2020.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zblog2020.github.io/">
+        <img src="https://zblog2020.github.io//images/avatar.png?v=1577278582579" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      学习分享
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Spring框架的入门了解</h2>
+            <div class="post-date">2019-12-25</div>
+            
+            <div class="post-content">
+              <h2 id="一-背景了解">一、背景了解</h2>
 <p>随着java语言的不断发展和壮大，java语言诞生了很多服务和技术，随着软件结构的日益庞大，程序员需要更好的分工合作，模块化渐渐的成为了一种需求，spring的出现简化了繁琐配置和复杂代码的开发，使得工程师么，可以更加专注的进行业务上的工作，省去了技术整合的时间。</p>
 <h4 id="特点">特点：</h4>
 <ol>
@@ -68,12 +147,44 @@
 <p>property标签设置类的属性，设置name(类中Set方法后的名字)，value(该属性的值)</p>
 <p>3.2、通过bean的构造器赋值</p>
 <p>constructor-age标签设置构造器，设置name（按照名字传值），value(所赋的值)</p>
-<p>//如果value值中，存在特殊符号，则用<![CDATA[]]]]><![CDATA[>包裹，并改成<value>标签</p>
+<p>//如果value值中，存在特殊符号，则用<![CDATA[]]>包裹，并改成<value>标签</p>
 <p>设置index(按照参数的顺序赋值)</p>
 <p>自动配置合适的构造器（顺序匹配构造器赋值）</p>
 <p>设置type(指定属性类型)</p>
 </li>
 </ul>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
